@@ -1,3 +1,21 @@
 .container{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    background-color: antiquewhite;
+}
+
+.box{
+    height: 20px;
+    width: 20px;
+    background-color: black;
 }

@@ -1,7 +1,8 @@
-// creates boxes
+// creates grid boxes
 function createGrid(num) {
     const container = document.querySelector('.container');
     for (let i = 0; i < num; i++) {
+        // creates row
         const row = document.createElement('div');
         row.classList.add('row');
 
