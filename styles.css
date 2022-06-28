@@ -4,31 +4,49 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin: 50px;
+    background-color: rgb(247, 255, 173);
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     background-color: beige;
-    border: 5px solid blue;
+    border: 5px solid rgb(161, 255, 74);
+    height: 540px;
+    width: 540px;
+
 }
 
 .row {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
     height: auto;
     width: auto;
     background-color: antiquewhite;
+    flex-grow: 1;
+
 }
 
 .box {
-    height: 20px;
-    width: 20px;
     background-color: white;
+    flex-grow: 10;
+
 }
 
 .box:hover {
     background-color: black;
+}
+
+.resize {
+    background-color: rgb(230, 250, 190);
+    color: rgb(4, 4, 7);
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    width: 150px;
+    border: 5px dotted rgb(166, 255, 139);
 }

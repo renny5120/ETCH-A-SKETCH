@@ -1,5 +1,7 @@
-// grid size button
+// body
 const body = document.querySelector('body');
+
+// grid size button
 const btn = document.createElement('button');
 btn.classList.add('resize');
 btn.textContent = 'Resize Grid';
@@ -24,6 +26,7 @@ function createGrid(num) {
     }
 };
 
+// create default grid of 16x16
 createGrid(16);
 addBtnListener();
 
@@ -36,7 +39,7 @@ function removeGrid() {
 }
 
 
-// button function
+// resize grid with button
 const button = document.querySelector('.resize');
 button.addEventListener('click', () => {
     let num = prompt('Please enter a number between 1-100');
@@ -50,14 +53,7 @@ button.addEventListener('click', () => {
     addBtnListener();
 });
 
-// // button listener
-// const boxes = document.querySelectorAll('.box');
-// boxes.forEach((div) => {
-//     div.addEventListener('mouseover', function (e) {
-//         e.target.style.background = 'black';
-//     });
-// });
-
+// adds listner to boxes
 function addBtnListener() {
     const boxes = document.querySelectorAll('.box');
     boxes.forEach((div) => {
